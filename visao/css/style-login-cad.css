@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+/*Estilização index*/
+.index, .index .background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.index .background{
+    max-width: 50%;
+    background: #E8F2F9;
+}
+
+.index .geral{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.index .geral img{
+    width: 50%;
+    height: auto;
+}
+
+.index .geral div{
+    width: 70%;
+    text-align: center;
+    font-size: clamp(16px, 1.5vw, 30px);
+    font-family: "Open Sans";
+}
+
+.index .geral form{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.index .geral form div{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.index .geral form input{
+    height: 30px;
+    width: 80%;
+}
+
+.index .geral form .btn{
+    margin-top: 70px;
+    width: 45%;
+    height: 40px;
+    font-size: clamp(16px, 1vw, 18px);
+    color: white;
+    font-weight: bold;
+    border: 1px solid #6C706F;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index .geral form .btn:hover, .btn a:hover{
+    transition: 0.2s;
+    opacity: 0.8;
+}
+
+.index .geral form .login{
+    background: #2C5238;
+}
+
+.index .geral form .cadastrar{
+    background: #427854;
+}
+
+/*Estilização Cadastro de usuário*/
+.cadastro, .cadastro .background{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.cadastro .background{
+    width: 50%;
+    background: #E8F2F9;
+}
+
+.cadastro .geral{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: clamp(16px, 1.5vw, 30px);
+    font-family: "Open Sans";
+}
+
+.cadastro .formTipo{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cadastro .formTipo .tiposUsuario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cadastro .formTipo img{
+    max-width: 70%;
+    background: #A7D3EA ;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.cadastro .formTipo input[type="radio"]:checked + img {
+    background: #73C9BA;
+}
+
+.cadastro .formTipo img:hover {
+    transform: scale(1.05);
+}
+
+.cadastro .formTipo label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.cadastro .formTipo input[type="radio"]{
+    display: none;
+}
+
+.cadastro form .btn{
+    width: 45%;
+    height: 40px;
+    font-size: clamp(12px, 1vw, 18px);
+    color: white;
+    font-weight: bold;
+    border: 1px solid #6C706F;
+    border-radius: 5px;
+    background: #3F6172;
+    cursor: pointer;
+}
+
+.cadastro form .btn:hover{
+    transition: 0.2s;
+    opacity: 0.8;
+}
+
+.cadastro .geral .formCad{
+    width: 90%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: clamp(16px, 1vw, 22px);;
+}
+
+.cadastro .geral .formCad div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.cadastro .formCad input[type="text"], .cadastro .formCad input[type="date"], .cadastro .formCad input[type="email"], .cadastro .formCad input[type="password"]{
+    height: 25px;
+    width: 100%;
+}
+
+.cadastro .formCad .labelRadio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cadastro .formCad .labelRadio input{
+    margin-right: 10px;
+    width: 20px;
+}
+
+@media screen and (max-width: 1200px){
+    .index .background, .cadastro .background{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .index .geral .btns{
+        flex-direction: column;
+    }
+
+    .index .geral form .btn{
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    .geral, .formTipo{
+        justify-content: flex-start;
+    }
+}

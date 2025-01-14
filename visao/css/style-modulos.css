@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "Montserrat";
+}
+
+body{
+    background: #E8F2F9;
+}
+
+/* Estilização da página inicial */
+.inicio header, .modulo header{
+    width: 100%;
+    background: #5AA094;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+#sair{
+    color: #2C534D;
+    font-weight: bold;
+}
+
+#sair:hover{
+    color: #E8F2F9;
+}
+
+.logo{
+    width: clamp(150px, 15%, 200px);
+}
+
+.inicio, .modulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inicio .modulos{
+    width: 95%;
+    height: 5vh;
+    font-size: clamp(15px, 1.5vw, 20px);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    background: #2C534D;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.inicio .modulos a{
+    color: #E8F2F9;
+}
+
+.inicio .modulos a:hover{
+    color: #A7D3EA;
+    transition: 0.6s;
+}
+
+.inicio h2, .modulo h2{
+    margin: 20px 0 20px 0;
+    max-width: 70%;
+    text-align: center;
+}
+
+.modulo form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modulo form div{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+.modulo form input{
+    height: 20px;
+}
+
+.modulo form input[type="submit"]{
+    width: 20%;
+    height: 30px;
+    margin-top: 20px;
+    font-size: clamp(12px, 1vw, 18px);
+    color: #E8F2F9;
+    font-weight: bold;
+    background: #2C534D;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.modulo form input[type="submit"]:hover{
+    transition: 0.2s;
+    opacity: 0.8;
+}
+
+.modulo form select{
+    margin-top: 5px;
+}
+
+.modulo #solicitacao{
+    width: 100%;
+    display: flex;
+}
+
+.modulo .tabela{
+    border-collapse: collapse;
+    border: 2px solid #d7d7d7;
+    width: 70%;
+    font-size: clamp(8px, 1vw, 18px);
+}
+
+.modulo .tabela tr:nth-child(even){
+    background-color: white;
+}
+
+.modulo .tabela tr:nth-child(odd){
+    background-color: rgb(241, 241, 241);
+}
+
+.modulo .tabela tr:hover{
+    background-color: lightgray;
+}
+
+.modulo .tabela td, .modulo .tabela th{
+    padding: 8px;
+    text-align: left;
+}
+
+.modulo .tabela th{
+    background: #2C534D;
+    color: #E8F2F9;
+}
+
+.modulo ul{
+    margin-left: 20px;
+}
+
+.modulo li{
+    margin-bottom: 10px;
+}
+
+.modulo .historico{
+    margin-top: 50px;
+}
+
+.modulo .historico .tabela{
+    width: 100%;
+}
+
+.modulo .acompanhar{
+    width: 95%;
+}
+
+.modulo .editar p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.modulo .editar form{
+    align-items: flex-start;
+}
